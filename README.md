@@ -1,6 +1,6 @@
 # git-fancy
 
-How to be fancy with git.
+How to be fancy with git. I'll add to this as I encounter fanciness.
 
 ##### Table of Contents
 
@@ -8,6 +8,7 @@ How to be fancy with git.
 
 - [Stage whitespace changes](#stage-whitespace-changes)
 - [Add changes to previous commit](#add-changes-to-previous-commit)
+- [Stage changes one piece at a time](#stage-changes-one-piece-at-a-time)
 
 <!-- /MarkdownTOC -->
 
@@ -22,4 +23,10 @@ $ git diff --cached -w | git apply --cached -R
 
 ```bash
 $ git commit -a --amend --no-edit
+```
+
+## Stage changes one piece at a time
+
+```bash
+$ git add -p
 ```
